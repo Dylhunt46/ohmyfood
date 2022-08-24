@@ -1,4 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
+@import "./utils/variables";
+@import "./base/general";
+
+.location {
+  display: flex;
+  align-items: center;
 }
