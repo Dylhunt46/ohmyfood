@@ -1,15 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
 .location {
   display: flex;
   align-items: center;
@@ -23,13 +11,11 @@ nav {
 .card__img {
   height: 12rem;
 }
-
 .card__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
 .img__1 img {
   object-position: 50% 60%;
 }
@@ -45,22 +31,6 @@ nav {
 .img__4 img {
   object-position: 50% 90%;
 }
-
 .card__body {
   display: flex;
 }
-
-h1 img {
-  height: 2.5rem;
-}
-
-.logo {
-  text-align: center;
-}
-
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-style: oblique;
-}
-
-/*# sourceMappingURL=style.css.map */
