@@ -1,0 +1,15 @@
+.btn {
+  width: 75%;
+  height: 3rem;
+  font-size: 0.9rem;
+  border: transparent;
+  border-radius: 2rem;
+  align-self: center;
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    $color-secondary,
+    $color-primary
+  );
+  box-shadow: 2px 2px 17px -4px rgba(0, 0, 0, 0.65);
+}

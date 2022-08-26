@@ -17,6 +17,22 @@
   border: none;
   background-color: #dbd8d8;
 }
+
+/* Booking*/
+
+.booking__background {
+  background-color: #fbf7f7;
+}
+.booking {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15rem;
+}
 .restaurants__cards {
   width: 90%;
   margin: 0 auto 2rem auto;
