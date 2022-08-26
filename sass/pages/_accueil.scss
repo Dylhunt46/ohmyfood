@@ -1,8 +1,22 @@
 .location {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #dbd8d8;
+  border-top: 3px solid #bebbbb;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  overflow: hidden;
 }
-
+.location i {
+  padding-left: 3rem;
+  margin-left: 1.2rem;
+}
+.location input {
+  padding-left: 1.5rem;
+  border: none;
+  background-color: #dbd8d8;
+}
 .restaurants__cards {
   width: 90%;
   margin: 0 auto 2rem auto;
