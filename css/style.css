@@ -102,19 +102,37 @@ nav {
 }
 
 /* Restaurants */
+.restaurants {
+  background-color: #fbf7f7;
+}
+
 .restaurants__cards {
   width: 90%;
-  margin: 0 auto 2rem auto;
+  margin: 2rem auto;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px 17px -4px rgba(0, 0, 0, 0.65);
 }
 
 .card__img {
   height: 12rem;
+  position: relative;
+}
+
+.new {
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  background-color: #99e2d0;
+  color: rgb(26, 104, 86);
+  font-weight: bold;
+  padding: 0.5rem 0.8rem;
 }
 
 .card__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .img__1 img {
@@ -134,7 +152,35 @@ nav {
 }
 
 .card__body {
+  height: 5rem;
   display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.card__text {
+  height: 4rem;
+  line-height: 1.5rem;
+}
+
+.heart {
+  justify-content: center;
+  align-self: center;
+  position: relative;
+}
+
+.heart1 {
+  font-size: 1.8rem;
+}
+
+.heart2 {
+  color: white;
+  position: absolute;
+  top: 5%;
+  left: 11%;
+  font-size: 1.45rem;
 }
 
 h1 img {
