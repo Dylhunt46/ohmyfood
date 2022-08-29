@@ -29,6 +29,9 @@ footer h2 {
   justify-content: space-evenly;
 }
 
+.footer__rubrics a {
+  color: $color-txt-foot;
+}
 .footer__rubrics i {
   padding-right: 0.5rem;
 }

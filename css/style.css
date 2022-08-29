@@ -8,12 +8,22 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
-nav {
+/* Header */
+/* Nav */
+.restaurants__nav {
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.nav__icon {
+  font-size: 2rem;
+  position: absolute;
+  left: 1rem;
 }
 
 .location {
@@ -232,6 +242,10 @@ footer h2 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+}
+
+.footer__rubrics a {
+  color: white;
 }
 
 .footer__rubrics i {

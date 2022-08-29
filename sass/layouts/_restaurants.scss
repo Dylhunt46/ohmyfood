@@ -1,4 +1,16 @@
-nav {
+/* Header */
+
+/* Nav */
+
+.restaurants__nav {
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.nav__icon {
+  font-size: 2rem;
+  position: absolute;
+  left: 1rem;
 }
