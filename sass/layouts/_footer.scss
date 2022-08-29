@@ -1,9 +1,11 @@
 footer {
   height: 12rem;
+  width: 90%;
+  margin: 0 auto;
   line-height: 1.25rem;
   padding: 1rem;
-  background-color: rgb(28, 29, 28);
-  color: white;
+  background-color: rgb(41, 41, 41);
+  color: $color-txt-foot;
 }
 footer .container {
   height: 100%;
@@ -25,4 +27,12 @@ footer h2 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+}
+
+.footer__rubrics i {
+  padding-right: 0.5rem;
+}
+
+.prop {
+  padding-left: 0.4rem;
 }
