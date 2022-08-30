@@ -17,9 +17,74 @@
 
 /* Main */
 
+.restaurants__img {
+  position: relative;
+}
 .restaurants__img img {
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
   height: 17rem;
+}
+
+/* Menus */
+
+.menu {
+  background-color: $color-background1;
+  border-radius: 3rem 3rem 0 0;
+  position: absolute;
+  top: 19rem;
+  width: 100%;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.5rem 0 1.5rem 0;
+}
+
+.menu__title h2 {
+  font-family: $font-secondary;
+  padding-right: 2rem;
+}
+
+.restaurants__menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+hr {
+  width: 14%;
+  height: 0.25rem;
+  background-color: $color-tertiary;
+  border: none;
+  margin-top: 0.5rem;
+}
+.menu__items__title {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.menu__items__description {
+  background-color: $color-background2;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 17px -4px rgba(0, 0, 0, 0.65);
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.menu__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices {
+  font-weight: bold;
+}
+
+.btn__order {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
 }

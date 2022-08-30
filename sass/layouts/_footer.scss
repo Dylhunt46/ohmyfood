@@ -1,11 +1,27 @@
 footer {
   height: 12rem;
   width: 90%;
-  margin: 0 auto;
+  margin: 65rem auto 0 auto;
   line-height: 1.25rem;
   padding: 1rem;
   background-color: rgb(41, 41, 41);
   color: $color-txt-foot;
+}
+
+.accueil {
+  margin: 0 auto;
+}
+
+.note {
+  margin: 69rem auto 0 auto;
+}
+
+.french {
+  margin: 63rem auto 0 auto;
+}
+
+.delice {
+  margin: 63rem auto 0 auto;
 }
 footer .container {
   height: 100%;
@@ -13,7 +29,7 @@ footer .container {
   flex-direction: column;
 }
 footer h2 {
-  font-family: "Shrikhand", cursive;
+  font-family: $font-secondary;
   font-style: oblique;
   font-weight: lighter;
   font-size: 1.25rem;
