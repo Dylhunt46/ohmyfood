@@ -1,7 +1,12 @@
 @import "./utils/variables";
+
 @import "./base/general";
+
+@import "./layouts/loader";
 @import "./layouts/restaurants";
-@import "./pages/accueil";
 @import "./layouts/logo";
 @import "./layouts/footer";
+
 @import "./components/buttons";
+
+@import "./pages/accueil";
