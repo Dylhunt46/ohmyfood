@@ -20,8 +20,8 @@ a {
   background-color: #fbf7f7;
   opacity: 1;
   z-index: 3;
-  -webkit-animation: disappear 15s forwards;
-          animation: disappear 15s forwards;
+  -webkit-animation: disappear 0.8s 5s forwards;
+          animation: disappear 0.8s 5s forwards;
   perspective: 1000px;
   display: grid;
   place-items: center;
@@ -30,18 +30,22 @@ a {
 @-webkit-keyframes disappear {
   0% {
     transform: scale(1);
+    background-color: transparent;
   }
   100% {
     transform: scale(0);
+    background-color: transparent;
   }
 }
 
 @keyframes disappear {
   0% {
     transform: scale(1);
+    background-color: transparent;
   }
   100% {
     transform: scale(0);
+    background-color: transparent;
   }
 }
 .cube {
@@ -49,8 +53,8 @@ a {
   text-align: center;
   position: relative;
   transform-style: preserve-3d;
-  -webkit-animation: spin 3s infinite linear;
-          animation: spin 3s infinite linear;
+  -webkit-animation: spin 2s infinite ease-in-out;
+          animation: spin 2s infinite ease-in-out;
   color: white;
 }
 
