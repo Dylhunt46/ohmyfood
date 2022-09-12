@@ -16,35 +16,50 @@
 }
 
 /* Main */
+.banner {
+  img {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
 
-.restaurants__img {
-  position: relative;
+.resto__title {
+  margin-top: -2rem;
+
+  h2 {
+    padding: 2rem 1rem;
+    font-family: "Shrikhand", cursive;
+    @include heart-animated;
+    background: $color-background1;
+    border-radius: 2rem 2rem 0 0;
+  }
 }
-.restaurants__img img {
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 100%;
-  height: 17rem;
-}
+
+
 
 /* Menus */
 
 .menu {
   background-color: $color-background1;
-  border-radius: 3rem 3rem 0 0;
-  position: absolute;
-  top: 19rem;
+  margin-top: -3rem;
+  overflow: hidden;
   width: 100%;
 }
+
 .menu__title {
   display: flex;
   justify-content: space-evenly;
   padding: 2.5rem 0 1.5rem 0;
+  border-radius: 3rem 3rem 0 0;
 }
 
 .menu__title h2 {
   font-family: $font-secondary;
   padding-right: 2rem;
+
 }
 
 .restaurants__menu {
@@ -59,28 +74,74 @@ hr {
   border: none;
   margin-top: 0.5rem;
 }
+
 .menu__items__title {
   padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 1.5rem 0;
 }
-.menu__items__description {
+
+.menus__item {
   background-color: $color-background2;
-  border-radius: 1rem;
-  box-shadow: 2px 2px 17px -4px rgba(0, 0, 0, 0.65);
-  margin-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-}
-
-.menu__details {
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  border-radius: 1rem;
+  @include shadow;
+
+  .menus__item__description {
+    padding: 0 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    h4,
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+
+
+    }
+  }
+
+  .menus__item__price {
+    margin-left: auto;
+    font-weight: bold;
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .menus__item__check {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 0 1rem 1rem 0;
+    background-color: $color-tertiary;
+    margin-right: -$check-width;
+    width: $check-width;
+    transition: margin-right 0.5s;
+
+    i {
+      display: grid;
+      place-items: center;
+      background-color: $color-background2;
+      color: $color-tertiary;
+      aspect-ratio: 1;
+      width: 2rem;
+      border-radius: 1rem;
+    }
+  }
+
+  &:hover {
+    .menus__item__check {
+      margin-right: 0;
+    }
+
+    i {
+      @include halfspin;
+      animation: halfspin 0.5s ease-in-out;
+    }
+  }
 }
 
-.prices {
-  font-weight: bold;
-}
 
 .btn__order {
   width: 60%;
