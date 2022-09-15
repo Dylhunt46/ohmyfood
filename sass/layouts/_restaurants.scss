@@ -81,71 +81,78 @@ hr {
 }
 
 .menus__item {
-  background-color: $color-background2;
-  overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  @include shadow;
+  @for $i from 1 through 4 {
+    animation: appear 0.2s both;
 
-  .menus__item__description {
-    padding: 0.1rem 1rem;
+    &:nth-child(#{$i}) {
+      animation-delay: 0.5s * $i;
+    }
+
+    background-color: $color-background2;
     overflow: hidden;
-    text-overflow: ellipsis;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    border-radius: 1rem;
+    height: 4.5rem;
+    margin-bottom: 1rem;
+    @include shadow;
 
-    h4,
-    p {
+    .menus__item__description {
+      padding: 0.1rem 1rem;
       overflow: hidden;
-      white-space: nowrap;
       text-overflow: ellipsis;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h4,
+      p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
     }
-  }
 
-  .menus__item__price {
-    margin-left: auto;
-    font-weight: bold;
-    padding: 0 1rem 1rem 1rem;
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .menus__item__check {
-    display: grid;
-    flex-shrink: 0;
-    place-items: center;
-    border-radius: 0 1rem 1rem 0;
-    background-color: $color-tertiary;
-    margin-right: -$check-width;
-    width: $check-width;
-    transition: margin-right 0.5s;
-
-    i {
-      display: grid;
-      place-items: center;
-      background-color: $color-background2;
-      color: $color-tertiary;
-      aspect-ratio: 1;
-      width: 2rem;
-      border-radius: 1rem;
+    .menus__item__price {
+      margin-left: auto;
+      font-weight: bold;
+      padding: 0 1rem 1rem 1rem;
+      display: flex;
+      align-items: flex-end;
     }
-  }
 
-  &:hover {
     .menus__item__check {
-      margin-right: 0;
+      display: grid;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 0 1rem 1rem 0;
+      background-color: $color-tertiary;
+      margin-right: -$check-width;
+      width: $check-width;
+      transition: margin-right 0.5s;
+
+      i {
+        display: grid;
+        place-items: center;
+        background-color: $color-background2;
+        color: $color-tertiary;
+        aspect-ratio: 1;
+        width: 2rem;
+        border-radius: 1rem;
+      }
     }
 
-    i {
-      @include halfspin;
-      animation: halfspin 0.5s ease-in-out;
+    &:hover {
+      .menus__item__check {
+        margin-right: 0;
+      }
+
+      i {
+        @include halfspin;
+        animation: halfspin 0.5s ease-in-out;
+      }
     }
   }
 }
-
 
 .btn__order {
   width: 60%;
