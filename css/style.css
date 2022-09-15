@@ -24,6 +24,10 @@ a {
   color: black;
 }
 
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
 .loader {
   position: fixed;
   inset: 0;
@@ -489,10 +493,6 @@ hr {
   margin: 0 auto;
   text-align: center;
   padding: 2rem 0;
-}
-
-h1 img {
-  height: 2.5rem;
 }
 
 .logo {
