@@ -501,7 +501,7 @@ hr {
 
 footer {
   height: 12rem;
-  margin: 0 auto;
+  margin: 4rem auto 0;
   line-height: 1.25rem;
   padding: 1rem;
   background-color: #353535;
