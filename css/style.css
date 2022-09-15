@@ -639,6 +639,12 @@ footer h2 {
   position: absolute;
   left: 0.88rem;
 }
+.working__area:hover {
+  background-color: #d7c0f2;
+}
+.working__area:hover i {
+  color: #9356dc;
+}
 
 .circle {
   background-color: #9356dc;

@@ -75,6 +75,14 @@
   border-radius: 10rem;
   position: absolute;
   left: 0.88rem;
+
+  &:hover {
+    background-color: lighten($color-primary, 25%);
+
+    i {
+      color: $color-primary;
+    }
+  }
 }
 
 .circle {
