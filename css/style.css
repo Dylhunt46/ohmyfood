@@ -233,7 +233,7 @@ hr {
   border-radius: 1rem;
   height: 4.5rem;
   margin-bottom: 1rem;
-  box-shadow: 2px 1px 7px -3px #000000;
+  box-shadow: 2px 3px 12px -3px #7e7e7e;
   animation: appear 0.2s both;
   background-color: white;
   overflow: hidden;
@@ -241,7 +241,7 @@ hr {
   border-radius: 1rem;
   height: 4.5rem;
   margin-bottom: 1rem;
-  box-shadow: 2px 1px 7px -3px #000000;
+  box-shadow: 2px 3px 12px -3px #7e7e7e;
   animation: appear 0.2s both;
   background-color: white;
   overflow: hidden;
@@ -249,7 +249,7 @@ hr {
   border-radius: 1rem;
   height: 4.5rem;
   margin-bottom: 1rem;
-  box-shadow: 2px 1px 7px -3px #000000;
+  box-shadow: 2px 3px 12px -3px #7e7e7e;
   animation: appear 0.2s both;
   background-color: white;
   overflow: hidden;
@@ -257,7 +257,7 @@ hr {
   border-radius: 1rem;
   height: 4.5rem;
   margin-bottom: 1rem;
-  box-shadow: 2px 1px 7px -3px #000000;
+  box-shadow: 2px 3px 12px -3px #7e7e7e;
 }
 .menus__item:nth-child(1) {
   animation-delay: 0.5s;
@@ -504,7 +504,7 @@ footer {
   margin: 0 auto;
   line-height: 1.25rem;
   padding: 1rem;
-  background-color: rgb(41, 41, 41);
+  background-color: #353535;
   color: white;
 }
 
@@ -545,15 +545,15 @@ footer h2 {
 }
 
 .btn {
-  width: 75%;
-  height: 3rem;
-  font-size: 0.9rem;
+  width: 70%;
+  height: 3.2rem;
+  font-size: 1rem;
   border: transparent;
   border-radius: 2rem;
   align-self: center;
   color: white;
   background-image: linear-gradient(to bottom, #ff79da, #9356dc);
-  box-shadow: 2px 1px 7px -3px #000000;
+  box-shadow: 2px 3px 12px -3px #7e7e7e;
   cursor: pointer;
 }
 
@@ -567,10 +567,10 @@ footer h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dbd8d8;
-  border-top: 3px solid #bebbbb;
+  background-color: #e4e3e3;
+  border-top: 3px solid #cbc9c9;
   padding: 1rem 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   overflow: hidden;
 }
 
@@ -582,7 +582,7 @@ footer h2 {
 .location input {
   padding-left: 1.5rem;
   border: none;
-  background-color: #dbd8d8;
+  background-color: #e4e3e3;
 }
 
 .location input:focus {
@@ -592,18 +592,25 @@ footer h2 {
 
 /* Booking*/
 .booking__background {
-  background-color: #fbf7f7;
+  background-color: #f6f6f6;
 }
 
 .booking {
   text-align: center;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 15rem;
+  height: 18rem;
+}
+.booking p {
+  font-size: 1.1rem;
+  color: #353535;
+}
+.booking a {
+  margin-top: 1rem;
 }
 
 /* Working */
@@ -632,15 +639,18 @@ footer h2 {
   width: 95%;
   height: 4rem;
   display: flex;
-  box-shadow: 2px 1px 7px -3px #000000;
+  box-shadow: 2px 3px 12px -3px #7e7e7e;
   align-items: center;
-  background-color: #fbf7f7;
-  border-radius: 10rem;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
   position: absolute;
   left: 0.88rem;
 }
+.working__area span {
+  font-weight: bold;
+}
 .working__area:hover {
-  background-color: #d7c0f2;
+  background-color: #f2eafb;
 }
 .working__area:hover i {
   color: #9356dc;
@@ -679,11 +689,11 @@ footer h2 {
   width: 90%;
   margin: 2rem auto;
   border-radius: 1.5rem;
-  box-shadow: 2px 1px 7px -3px #000000;
+  box-shadow: 2px 3px 12px -3px #7e7e7e;
 }
 
 .card__img {
-  height: 12rem;
+  height: 10rem;
   position: relative;
 }
 
@@ -692,7 +702,7 @@ footer h2 {
   top: 10%;
   right: 4%;
   background-color: #99e2d0;
-  color: rgb(26, 104, 86);
+  color: #30a88a;
   font-weight: bold;
   padding: 0.5rem 0.8rem;
 }

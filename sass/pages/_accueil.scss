@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dbd8d8;
-  border-top: 3px solid #bebbbb;
+  background-color: $color-background-location;
+  border-top: 3px solid darken($color-background-location, 10%);
   padding: 1rem 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
 .location input {
   padding-left: 1.5rem;
   border: none;
-  background-color: #dbd8d8;
+  background-color: $color-background-location;
 }
 
 .location input:focus {
@@ -28,18 +28,27 @@
 /* Booking*/
 
 .booking__background {
-  background-color: #fbf7f7;
+  background-color: $color-background1;
 }
 
 .booking {
   text-align: center;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 15rem;
+  height: 18rem;
+
+  p {
+    font-size: 1.1rem;
+    color: $color-background-footer;
+  }
+
+  a {
+    margin-top: 1rem;
+  }
 }
 
 /* Working */
@@ -71,13 +80,17 @@
   display: flex;
   @include shadow;
   align-items: center;
-  background-color: #fbf7f7;
-  border-radius: 10rem;
+  background-color: $color-background1;
+  border-radius: 1rem;
   position: absolute;
   left: 0.88rem;
 
+  span {
+    font-weight: bold;
+  }
+
   &:hover {
-    background-color: lighten($color-primary, 25%);
+    background-color: lighten($color-primary, 35%);
 
     i {
       color: $color-primary;
@@ -123,7 +136,7 @@
 }
 
 .card__img {
-  height: 12rem;
+  height: 10rem;
   position: relative;
 }
 
@@ -132,7 +145,7 @@
   top: 10%;
   right: 4%;
   background-color: $color-tertiary;
-  color: rgb(26, 104, 86);
+  color: darken($color-tertiary, 32%);
   font-weight: bold;
   padding: 0.5rem 0.8rem;
 }

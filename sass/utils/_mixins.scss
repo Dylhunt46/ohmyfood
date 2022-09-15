@@ -3,7 +3,7 @@
 }
 
 @mixin shadow {
-    box-shadow: 2px 1px 7px -3px #000000;
+    box-shadow: 2px 3px 12px -3px $light-grey;
 }
 
 @mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
