@@ -11,6 +11,10 @@
       $color-primary );
   @include shadow;
   cursor: pointer;
+
+  @media (min-width: 1000px) {
+    width: 25%;
+  }
 }
 
 .btn:hover {

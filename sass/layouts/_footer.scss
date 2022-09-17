@@ -5,6 +5,22 @@ footer {
   padding: 1rem;
   background-color: $color-background-footer;
   color: $color-txt-foot;
+
+  @media (min-width: 1000Px) {
+    footer .container {
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      width: 100%;
+    }
+
+    .footer__rubrics {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 }
 
 
@@ -13,6 +29,12 @@ footer .container {
   width: 90%;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1000Px) {
+
+    width: 100%;
+
+  }
 }
 
 footer h2 {

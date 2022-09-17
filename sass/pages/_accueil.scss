@@ -60,6 +60,41 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @media (min-width: 1000px) {
+    width: 100%;
+    display: block;
+    height: 10rem;
+    text-align: center;
+    margin: 0;
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+
+      li {
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+
+    .working__menu {
+      display: flex;
+      margin: 0;
+      height: 4rem;
+      width: 90%;
+    }
+
+    .working__area {
+      position: static;
+      width: 100%;
+    }
+  }
 }
 
 .working h2 {
@@ -121,11 +156,32 @@
 .restaurants {
   background-color: $color-background1;
   height: 100%;
+
+  @media (min-width: 1000px) {
+
+
+    .restaurants__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .restaurants__cards {
+      width: 40%;
+    }
+
+  }
 }
 
 .restaurants h2 {
   padding-top: 3rem;
   padding-left: 1rem;
+
+  @media (min-width: 1000px) {
+    text-align: center;
+    padding-left: 0;
+  }
+
+
 }
 
 .restaurants__cards {
@@ -191,7 +247,7 @@
   .checkbox {
     cursor: pointer;
     position: absolute;
-    right: 0.5rem;
+    right: 0rem;
     top: 50%;
     transform: translateY(-50%);
 
