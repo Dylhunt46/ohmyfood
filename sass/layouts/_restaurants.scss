@@ -134,8 +134,7 @@ hr {
 }
 
 .menus__item {
-  @for $i from 1 through 4 {
-    animation: appear 0.2s both;
+  @for $i from 2 through 10 {
 
     &:nth-child(#{$i}) {
       animation-delay: 0.5s * $i;
@@ -148,6 +147,7 @@ hr {
     height: 4.5rem;
     margin-bottom: 1rem;
     @include shadow;
+    animation: appear 0.2s both;
 
 
 
