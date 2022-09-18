@@ -29,7 +29,7 @@
     text-align: center;
     position: relative;
     transform-style: preserve-3d;
-    animation: spin 2s infinite ease-in-out;
+    animation: spin 3s infinite ease-in-out;
     color: $color-txt-foot;
 }
 
@@ -72,10 +72,10 @@
 
 @keyframes spin {
     from {
-        transform: rotateX(0deg) rotate(0deg);
+        transform: rotateY(360deg) rotateZ(360deg);
     }
 
     to {
-        transform: rotateX(360deg) rotate(360deg);
+        transform: rotateY(360deg) rotateZ(0deg);
     }
 }
