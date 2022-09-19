@@ -183,6 +183,10 @@ h1 {
     display: flex;
   }
 }
+.menu__section {
+  display: none;
+}
+
 .menu__title {
   display: flex;
   justify-content: space-evenly;
