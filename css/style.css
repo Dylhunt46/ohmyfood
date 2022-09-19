@@ -165,6 +165,7 @@ h1 {
 }
 .resto__title .fas:hover {
   animation: anim-heart 1s both;
+  cursor: pointer;
 }
 
 /* Menus */
@@ -343,7 +344,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -400,7 +401,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -457,7 +458,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -514,7 +515,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -571,7 +572,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -628,7 +629,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -685,7 +686,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -742,7 +743,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -799,7 +800,7 @@ hr {
   place-items: center;
   background-color: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }

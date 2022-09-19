@@ -57,6 +57,7 @@
 
     &:hover {
       animation: anim-heart 1s both;
+      cursor: pointer;
 
     }
   }
@@ -194,8 +195,8 @@ hr {
         place-items: center;
         background-color: $color-background2;
         color: $color-tertiary;
-        aspect-ratio: 1;
-        width: 2rem;
+        height: $check-ratio;
+        width: $check-ratio;
         border-radius: 1rem;
       }
     }
