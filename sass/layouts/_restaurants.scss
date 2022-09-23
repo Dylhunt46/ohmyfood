@@ -50,10 +50,7 @@
     cursor: pointer;
 
     &:hover {
-      color: transparent;
-      @include gradient(1);
-      background-clip: text;
-      -webkit-background-clip: text;
+      @include custom;
       animation: anim-heart 3s ease-in-out;
       transition: all 2s ease-in-out;
     }
@@ -69,10 +66,7 @@
 
     &:checked~.checked {
       display: inline-block;
-      color: transparent;
-      @include gradient(1);
-      background-clip: text;
-      -webkit-background-clip: text;
+      @include custom;
     }
 
     &:checked~.unchecked {
@@ -143,7 +137,6 @@ hr {
     display: flex;
     flex-direction: column;
     width: 90%;
-
   }
 }
 

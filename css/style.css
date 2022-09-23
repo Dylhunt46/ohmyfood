@@ -1186,19 +1186,15 @@ footer h2 {
   animation: anim-heart 3s ease-in-out;
   transition: all 2s ease-in-out;
 }
-.card__body .checkbox--custom input[type=checkbox] {
-  display: none;
-}
+.card__body .checkbox--custom input[type=checkbox],
 .card__body .checkbox--custom .checked {
   display: none;
-  opacity: 0;
 }
 .card__body .checkbox--custom input[type=checkbox] {
   font-size: 2rem;
 }
 .card__body .checkbox--custom input[type=checkbox]:checked ~ .checked {
   display: inline-block;
-  opacity: 1;
   color: transparent;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;

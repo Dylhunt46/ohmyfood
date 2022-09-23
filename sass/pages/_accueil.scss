@@ -258,23 +258,16 @@
       cursor: pointer;
 
       &:hover {
-        color: transparent;
-        @include gradient(1);
-        background-clip: text;
-        -webkit-background-clip: text;
+        @include custom;
         animation: anim-heart 3s ease-in-out;
         transition: all 2s ease-in-out;
       }
     }
   }
 
-  .checkbox--custom input[type="checkbox"] {
-    display: none;
-  }
-
+  .checkbox--custom input[type="checkbox"],
   .checkbox--custom .checked {
     display: none;
-    opacity: 0;
   }
 
   .checkbox--custom input[type="checkbox"] {
@@ -282,11 +275,7 @@
 
     &:checked~.checked {
       display: inline-block;
-      opacity: 1;
-      color: transparent;
-      @include gradient(1);
-      background-clip: text;
-      -webkit-background-clip: text;
+      @include custom;
     }
 
     &:checked~.unchecked {

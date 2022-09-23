@@ -6,6 +6,13 @@
     box-shadow: 2px 3px 12px -3px $light-grey;
 }
 
+@mixin custom {
+    color: transparent;
+    @include gradient(1);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 
 @mixin halfspin {
     @keyframes halfspin {
