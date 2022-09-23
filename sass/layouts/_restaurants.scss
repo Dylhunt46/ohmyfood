@@ -8,15 +8,16 @@
   align-items: center;
   position: relative;
   padding-top: 1.5rem;
-}
 
-.nav__icon {
-  font-size: 2rem;
-  position: absolute;
-  left: 1rem;
+  &__icon {
+    font-size: 2rem;
+    position: absolute;
+    left: 1rem;
+  }
 }
 
 /* Main */
+
 .banner {
   img {
     display: block;
@@ -33,7 +34,7 @@
 
   h2 {
     padding: 2rem 1rem;
-    font-family: "Shrikhand", cursive;
+    font-family: $font-secondary;
     background: $color-background1;
     border-radius: 2rem 2rem 0 0;
   }

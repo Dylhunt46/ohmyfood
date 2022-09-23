@@ -123,8 +123,7 @@ h1 {
   position: relative;
   padding-top: 1.5rem;
 }
-
-.nav__icon {
+.restaurants__nav__icon {
   font-size: 2rem;
   position: absolute;
   left: 1rem;
