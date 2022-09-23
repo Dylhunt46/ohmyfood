@@ -3,10 +3,10 @@
 /* Sizes */
 @keyframes anim-heart {
   0% {
-    opacity: 0;
+    font-weight: 400;
   }
   100% {
-    opacity: 1;
+    font-weight: 700;
   }
 }
 @keyframes appear {
@@ -149,23 +149,40 @@ h1 {
   background: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
 }
-.resto__title i {
+.resto__title .checkbox--custom {
   position: absolute;
-  font-size: 2rem;
-  right: 1.5rem;
+  right: 1.9rem;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 2rem;
 }
-.resto__title .fas {
+.resto__title i {
+  cursor: pointer;
+}
+.resto__title i:hover {
   color: transparent;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
-  opacity: 0;
+  animation: anim-heart 3s ease-in-out;
+  transition: all 2s ease-in-out;
 }
-.resto__title .fas:hover {
-  animation: anim-heart 1s both;
-  cursor: pointer;
+.resto__title .checkbox--custom input[type=checkbox],
+.resto__title .checkbox--custom .checked {
+  display: none;
+}
+.resto__title .checkbox--custom input[type=checkbox] {
+  font-size: 2rem;
+}
+.resto__title .checkbox--custom input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.resto__title .checkbox--custom input[type=checkbox]:checked ~ .unchecked {
+  display: none;
 }
 
 /* Menus */
@@ -1145,53 +1162,50 @@ footer h2 {
   padding: 1rem;
   background-color: white;
   border-radius: 0 0 1.5rem 1.5rem;
+  /* Hearts */
 }
 .card__body h3,
 .card__body span {
   margin: 0.25rem 0;
 }
-.card__body .checkbox {
-  cursor: pointer;
+.card__body .checkbox--custom {
   position: absolute;
-  right: 0rem;
+  right: 1.9rem;
   top: 50%;
   transform: translateY(-50%);
-}
-.card__body .checkbox__input {
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-.card__body i {
-  position: absolute;
   font-size: 2rem;
-  right: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
 }
-.card__body .fas {
+.card__body .checkbox--custom i {
+  cursor: pointer;
+}
+.card__body .checkbox--custom i:hover {
   color: transparent;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
+  animation: anim-heart 3s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+.card__body .checkbox--custom input[type=checkbox] {
+  display: none;
+}
+.card__body .checkbox--custom .checked {
+  display: none;
   opacity: 0;
-  transition: all 1s ease-in-out;
 }
-.card__body .fas:hover {
-  animation: anim-heart 1s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+.card__body .checkbox--custom input[type=checkbox] {
+  font-size: 2rem;
 }
-
-.checkbox__input:checked + .far {
+.card__body .checkbox--custom input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+  opacity: 1;
   color: transparent;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
-  opacity: 1;
+}
+.card__body .checkbox--custom input[type=checkbox]:checked ~ .unchecked {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
