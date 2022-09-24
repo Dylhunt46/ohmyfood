@@ -123,7 +123,8 @@ h1 {
   position: relative;
   padding-top: 1.5rem;
 }
-.restaurants__nav__icon {
+
+.nav__icon {
   font-size: 2rem;
   position: absolute;
   left: 1rem;
@@ -191,6 +192,19 @@ h1 {
   overflow: hidden;
   width: 100%;
 }
+.menu__section {
+  display: none;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.5rem 0 1.5rem 0;
+  border-radius: 3rem 3rem 0 0;
+}
+.menu__title h2 {
+  font-family: "Shrikhand", cursive;
+  padding-right: 2rem;
+}
 
 @media (min-width: 1100px) {
   .menu {
@@ -200,22 +214,6 @@ h1 {
     display: flex;
   }
 }
-.menu__section {
-  display: none;
-}
-
-.menu__title {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2.5rem 0 1.5rem 0;
-  border-radius: 3rem 3rem 0 0;
-}
-
-.menu__title h2 {
-  font-family: "Shrikhand", cursive;
-  padding-right: 2rem;
-}
-
 .restaurants__menu {
   width: 90%;
   margin: 0 auto;
@@ -226,25 +224,23 @@ h1 {
   text-transform: uppercase;
 }
 
-hr {
+.menu__items__title {
+  margin-bottom: 1.5rem;
+  padding-top: 3rem;
+}
+.menu__items__title hr {
   width: 14%;
   height: 0.25rem;
   background-color: #99e2d0;
   border: none;
   margin-top: 0.5rem;
 }
-
 @media (min-width: 1100px) {
   .menu__items {
     display: flex;
     flex-direction: column;
     width: 90%;
   }
-}
-
-.menu__items__title {
-  margin-bottom: 1.5rem;
-  padding-top: 3rem;
 }
 
 .menus__item {
@@ -854,6 +850,20 @@ footer {
   background-color: #353535;
   color: white;
 }
+footer .container {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 @media (min-width: 1000Px) {
   footer footer .container {
     width: 100%;
@@ -868,27 +878,6 @@ footer {
   }
 }
 
-footer .container {
-  height: 100%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 1000Px) {
-  footer .container {
-    width: 100%;
-  }
-}
-
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-style: oblique;
-  font-weight: lighter;
-  font-size: 1.25rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .footer__rubrics {
   height: 8rem;
   display: flex;
@@ -896,21 +885,17 @@ footer h2 {
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
-
 .footer__rubrics a {
   color: white;
 }
-
 .footer__rubrics i {
   padding-right: 0.5rem;
 }
-
-.prop {
+.footer__rubrics .prop {
   padding-left: 0.4rem;
 }
-
-.footer__rubrics li:hover,
-.footer__rubrics a:hover {
+.footer__rubrics .footer__rubrics li:hover,
+.footer__rubrics .footer__rubrics a:hover {
   color: #9356dc;
   transition: 0.3s ease-in-out;
 }
@@ -955,6 +940,7 @@ footer h2 {
   margin-left: 1.2rem;
 }
 .location input {
+  background-color: #e4e3e3;
   padding-left: 1.5rem;
   border: none;
 }
@@ -1022,7 +1008,13 @@ footer h2 {
 .working__area:hover i {
   color: #9356dc;
 }
-.working__area .circle {
+.working__area .working__icon {
+  color: #858282;
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.working .circle {
   background-color: #9356dc;
   color: white;
   width: 1.4rem;
@@ -1032,39 +1024,33 @@ footer h2 {
   font-size: 0.9rem;
   z-index: 2;
 }
-.working__area .working__icon {
-  color: #858282;
-  font-size: 1.4rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 @media (min-width: 1000px) {
-  .working__area {
+  .working {
     width: 100%;
     display: block;
     height: 10rem;
     text-align: center;
     margin: 0;
   }
-  .working__area h2 {
+  .working h2 {
     margin-top: 2rem;
   }
-  .working__area ul {
+  .working ul {
     display: flex;
     justify-content: space-evenly;
   }
-  .working__area ul li {
+  .working ul li {
     width: 75%;
     display: flex;
     justify-content: space-evenly;
   }
-  .working__area .working__menu {
+  .working .working__menu {
     display: flex;
     margin: 0;
     height: 4rem;
     width: 90%;
   }
-  .working__area .working__area {
+  .working .working__area {
     position: static;
     width: 100%;
   }

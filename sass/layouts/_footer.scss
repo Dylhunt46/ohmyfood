@@ -6,6 +6,22 @@ footer {
   background-color: $color-background-footer;
   color: $color-txt-foot;
 
+  .container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-family: $font-secondary;
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   @media (min-width: 1000Px) {
     footer .container {
       width: 100%;
@@ -21,29 +37,7 @@ footer {
       align-items: center;
     }
 
-
   }
-}
-
-
-footer .container {
-  height: 100%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 1000Px) {
-    width: 100%;
-  }
-}
-
-footer h2 {
-  font-family: $font-secondary;
-  font-style: oblique;
-  font-weight: lighter;
-  font-size: 1.25rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .footer__rubrics {
@@ -52,22 +46,22 @@ footer h2 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-}
 
-.footer__rubrics a {
-  color: $color-txt-foot;
-}
+  a {
+    color: $color-txt-foot;
+  }
 
-.footer__rubrics i {
-  padding-right: 0.5rem;
-}
+  i {
+    padding-right: 0.5rem;
+  }
 
-.prop {
-  padding-left: 0.4rem;
-}
+  .prop {
+    padding-left: 0.4rem;
+  }
 
-.footer__rubrics li:hover,
-.footer__rubrics a:hover {
-  color: $color-primary;
-  transition: 0.3s ease-in-out;
+  .footer__rubrics li:hover,
+  .footer__rubrics a:hover {
+    color: $color-primary;
+    transition: 0.3s ease-in-out;
+  }
 }

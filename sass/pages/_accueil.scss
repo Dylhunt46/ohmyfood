@@ -16,6 +16,7 @@
   }
 
   input {
+    background-color: $color-background-location;
     padding-left: 1.5rem;
     border: none;
 
@@ -95,60 +96,62 @@
       }
     }
 
-    .circle {
-      background-color: $color-primary;
-      color: $color-txt-foot;
-      width: 1.4rem;
-      line-height: 1.4rem;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 0.9rem;
-      z-index: 2;
-    }
-
     .working__icon {
       color: $color-icon;
       font-size: 1.4rem;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
+  }
 
-    @media (min-width: 1000px) {
-      width: 100%;
-      display: block;
-      height: 10rem;
-      text-align: center;
-      margin: 0;
+  .circle {
+    background-color: $color-primary;
+    color: $color-txt-foot;
+    width: 1.4rem;
+    line-height: 1.4rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 2;
+  }
 
-      h2 {
-        margin-top: 2rem;
-      }
+  @media (min-width: 1000px) {
+    width: 100%;
+    display: block;
+    height: 10rem;
+    text-align: center;
+    margin: 0;
 
-      ul {
+    h2 {
+      margin-top: 2rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+
+      li {
+        width: 75%;
         display: flex;
         justify-content: space-evenly;
-
-        li {
-          width: 75%;
-          display: flex;
-          justify-content: space-evenly;
-        }
       }
+    }
 
-      .working__menu {
-        display: flex;
-        margin: 0;
-        height: 4rem;
-        width: 90%;
-      }
+    .working__menu {
+      display: flex;
+      margin: 0;
+      height: 4rem;
+      width: 90%;
+    }
 
-      .working__area {
-        position: static;
-        width: 100%;
-      }
+    .working__area {
+      position: static;
+      width: 100%;
     }
   }
 }
+
+
 
 /* Restaurants */
 
@@ -239,6 +242,7 @@
   .img__4 img {
     object-position: 50% 90%;
   }
+
 
   /* Hearts */
 
