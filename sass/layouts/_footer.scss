@@ -59,8 +59,8 @@ footer {
     padding-left: 0.4rem;
   }
 
-  .footer__rubrics li:hover,
-  .footer__rubrics a:hover {
+  li:hover,
+  a:hover {
     color: $color-primary;
     transition: 0.3s ease-in-out;
   }

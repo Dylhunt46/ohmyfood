@@ -889,8 +889,8 @@ footer h2 {
 .footer__rubrics .prop {
   padding-left: 0.4rem;
 }
-.footer__rubrics .footer__rubrics li:hover,
-.footer__rubrics .footer__rubrics a:hover {
+.footer__rubrics li:hover,
+.footer__rubrics a:hover {
   color: #9356dc;
   transition: 0.3s ease-in-out;
 }
