@@ -52,7 +52,7 @@
 
     &:hover {
       @include custom;
-      animation: anim-heart 3s ease-in-out;
+      animation: anim-heart 2.5s ease-in-out;
       transition: all 2s ease-in-out;
     }
   }
@@ -68,6 +68,10 @@
     &:checked~.checked {
       display: inline-block;
       @include custom;
+
+      &:hover {
+        animation: anim-heart 0s ease-in-out;
+      }
     }
 
     &:checked~.unchecked {
@@ -101,9 +105,9 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
   .menu {
-    padding-left: 2.5rem;
+    padding: 0 2.5rem;
   }
 
   .menus__list {
@@ -138,83 +142,85 @@
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1400px) {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
   }
 }
 
+
 .menus__item {
   @for $i from 2 through 10 {
-
     &:nth-child(#{$i}) {
       animation-delay: 0.5s * $i;
     }
+  }
 
-    background-color: $color-background2;
-    overflow: hidden;
+  display: flex;
+  height: 4.5rem;
+  overflow: hidden;
+  background-color: $color-background2;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  @include shadow;
+  animation: appear 0.2s both;
+
+  &__description {
+    padding: 0.1rem 1rem;
     display: flex;
-    border-radius: 1rem;
-    height: 4.5rem;
-    margin-bottom: 1rem;
-    @include shadow;
-    animation: appear 0.2s both;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
-    .menus__item__description {
-      padding: 0.1rem 1rem;
+    h4,
+    p {
       overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-
-      h4,
-      p {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-      }
     }
+  }
 
-    .menus__item__price {
-      margin-left: auto;
-      font-weight: bold;
-      padding: 0 1rem 1rem 1rem;
-      display: flex;
-      align-items: flex-end;
+  &__price {
+    margin-left: auto;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__check {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    background-color: $color-tertiary;
+    border-radius: 0 1rem 1rem 0;
+    width: $check-width;
+    margin-right: -$check-width;
+    transition: margin-right 0.5s;
+
+    i {
+      display: grid;
+      place-items: center;
+      background-color: $color-background2;
+      color: $color-tertiary;
+      height: $check-ratio;
+      width: $check-ratio;
+      border-radius: 1rem;
     }
+  }
+
+  &:hover {
 
     .menus__item__check {
-      display: grid;
-      flex-shrink: 0;
-      place-items: center;
-      border-radius: 0 1rem 1rem 0;
-      background-color: $color-tertiary;
-      margin-right: -$check-width;
-      width: $check-width;
-      transition: margin-right 0.5s;
-
-      i {
-        display: grid;
-        place-items: center;
-        background-color: $color-background2;
-        color: $color-tertiary;
-        height: $check-ratio;
-        width: $check-ratio;
-        border-radius: 1rem;
-      }
+      margin-right: 0;
     }
 
-    &:hover {
-      .menus__item__check {
-        margin-right: 0;
-      }
-
-      i {
-        @include halfspin;
-        animation: halfspin 0.5s ease-in-out;
-      }
+    i {
+      @include halfspin;
+      animation: halfspin 0.5s ease-in-out;
     }
   }
 }

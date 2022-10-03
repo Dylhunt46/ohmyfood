@@ -159,7 +159,7 @@ h1 {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
-  animation: anim-heart 3s ease-in-out;
+  animation: anim-heart 2.5s ease-in-out;
   transition: all 2s ease-in-out;
 }
 .resto__title .checkbox--custom input[type=checkbox],
@@ -175,6 +175,9 @@ h1 {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
+}
+.resto__title .checkbox--custom input[type=checkbox]:checked ~ .checked:hover {
+  animation: anim-heart 0s ease-in-out;
 }
 .resto__title .checkbox--custom input[type=checkbox]:checked ~ .unchecked {
   display: none;
@@ -201,9 +204,9 @@ h1 {
   padding-right: 2rem;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
   .menu {
-    padding-left: 2.5rem;
+    padding: 0 2.5rem;
   }
   .menus__list {
     display: flex;
@@ -230,84 +233,20 @@ h1 {
   border: none;
   margin-top: 0.5rem;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
   .menu__items {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
   }
 }
 
 .menus__item {
-  background-color: white;
-  overflow: hidden;
   display: flex;
-  border-radius: 1rem;
   height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
-  background-color: white;
   overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
   background-color: white;
-  overflow: hidden;
-  display: flex;
   border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 3px 12px -3px #7e7e7e;
-  animation: appear 0.2s both;
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  border-radius: 1rem;
-  height: 4.5rem;
   margin-bottom: 1rem;
   box-shadow: 2px 3px 12px -3px #7e7e7e;
   animation: appear 0.2s both;
@@ -315,494 +254,63 @@ h1 {
 .menus__item:nth-child(2) {
   animation-delay: 1s;
 }
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .menus__item:nth-child(3) {
   animation-delay: 1.5s;
-}
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 }
 .menus__item:nth-child(4) {
   animation-delay: 2s;
 }
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .menus__item:nth-child(5) {
   animation-delay: 2.5s;
-}
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 }
 .menus__item:nth-child(6) {
   animation-delay: 3s;
 }
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .menus__item:nth-child(7) {
   animation-delay: 3.5s;
-}
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 }
 .menus__item:nth-child(8) {
   animation-delay: 4s;
 }
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .menus__item:nth-child(9) {
   animation-delay: 4.5s;
-}
-.menus__item .menus__item__description {
-  padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menus__item .menus__item__price {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menus__item .menus__item__check {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99e2d0;
-  margin-right: -4rem;
-  width: 4rem;
-  transition: margin-right 0.5s;
-}
-.menus__item .menus__item__check i {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  color: #99e2d0;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 1rem;
-}
-.menus__item:hover .menus__item__check {
-  margin-right: 0;
-}
-.menus__item:hover i {
-  animation: halfspin 0.5s ease-in-out;
-}
-@keyframes halfspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 }
 .menus__item:nth-child(10) {
   animation-delay: 5s;
 }
-.menus__item .menus__item__description {
+.menus__item__description {
   padding: 0.1rem 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menus__item .menus__item__description h4,
-.menus__item .menus__item__description p {
+.menus__item__description h4,
+.menus__item__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menus__item .menus__item__price {
+.menus__item__price {
   margin-left: auto;
   font-weight: bold;
-  padding: 0 1rem 1rem 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
   display: flex;
   align-items: flex-end;
 }
-.menus__item .menus__item__check {
+.menus__item__check {
   display: grid;
-  flex-shrink: 0;
   place-items: center;
-  border-radius: 0 1rem 1rem 0;
+  flex-shrink: 0;
   background-color: #99e2d0;
-  margin-right: -4rem;
+  border-radius: 0 1rem 1rem 0;
   width: 4rem;
+  margin-right: -4rem;
   transition: margin-right 0.5s;
 }
-.menus__item .menus__item__check i {
+.menus__item__check i {
   display: grid;
   place-items: center;
   background-color: white;
@@ -847,7 +355,6 @@ footer {
 }
 footer .container {
   height: 100%;
-  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -947,9 +454,7 @@ footer h2 {
 .booking {
   background-color: #f6f6f6;
   text-align: center;
-  margin: 0 auto;
   padding: 3rem 0;
-  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1142,11 +647,11 @@ footer h2 {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
-  animation: anim-heart 3s ease-in-out;
+  animation: anim-heart 2.5s ease-in-out;
   transition: all 2s ease-in-out;
 }
-.restaurants .checkbox--custom input[type=checkbox],
-.restaurants .checkbox--custom .checked {
+.restaurants input[type=checkbox],
+.restaurants .checked {
   display: none;
 }
 .restaurants .checkbox--custom input[type=checkbox] {
@@ -1158,6 +663,9 @@ footer h2 {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
+}
+.restaurants .checkbox--custom input[type=checkbox]:checked ~ .checked:hover {
+  animation: anim-heart 0s ease-in-out;
 }
 .restaurants .checkbox--custom input[type=checkbox]:checked ~ .unchecked {
   display: none;
