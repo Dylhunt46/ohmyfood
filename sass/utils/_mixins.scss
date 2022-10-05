@@ -6,6 +6,10 @@
     background-image: linear-gradient(43deg, $color-primary 20%, $color-secondary 46%, $color-tertiary 100%);
 }
 
+/**
+* Box shadow 
+*! Sauf survol des boutons
+*/
 @mixin shadow {
     box-shadow: 2px 3px 12px -3px $light-grey;
 }

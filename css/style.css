@@ -1,6 +1,10 @@
 /* Colors */
 /* Fonts */
 /* Sizes */
+/**
+* Box shadow 
+*! Sauf survol des boutons
+*/
 /* Loader */
 @keyframes spin {
   from {
@@ -334,18 +338,11 @@ h1 {
   }
 }
 
-.btn__order {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 2rem 0;
-}
-
 .logo {
   text-align: center;
 }
 
-footer {
+.footer {
   height: 12rem;
   margin: 4rem auto 0;
   line-height: 1.25rem;
@@ -353,12 +350,12 @@ footer {
   background-color: #353535;
   color: white;
 }
-footer .container {
+.footer .container {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-footer h2 {
+.footer h2 {
   font-family: "Shrikhand", cursive;
   font-style: oblique;
   font-weight: lighter;
@@ -367,14 +364,14 @@ footer h2 {
   padding-bottom: 1rem;
 }
 @media (min-width: 1000Px) {
-  footer footer .container {
+  .footer footer .container {
     width: 100%;
   }
-  footer h2 {
+  .footer h2 {
     text-align: center;
     width: 100%;
   }
-  footer .footer__rubrics {
+  .footer .footer__rubrics {
     flex-direction: row;
     align-items: center;
   }
@@ -402,8 +399,9 @@ footer h2 {
   transition: 0.3s ease-in-out;
 }
 
+/* Bouton page d'accueil */
 .btn {
-  width: 70%;
+  width: 60%;
   height: 3.2rem;
   font-size: 1rem;
   border: transparent;
@@ -420,6 +418,15 @@ footer h2 {
   }
 }
 
+/* Bouton page restaurants */
+.btn__order {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Effet au survol des boutons */
 .btn:hover {
   opacity: 0.8;
   box-shadow: 2px 2px 17px -4px rgb(0, 0, 0);
