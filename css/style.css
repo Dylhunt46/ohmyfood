@@ -1,11 +1,15 @@
 /* Colors */
 /* Fonts */
 /* Sizes */
+/* Loader faces cube */
 /**
 * Box shadow 
 *! Sauf survol des boutons
 */
+/* Hearts */
+/* Rotation green check */
 /* Loader */
+/* Rotation */
 @keyframes spin {
   from {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
@@ -14,6 +18,7 @@
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
 }
+/* End animation */
 @keyframes disappear {
   0% {
     transform: scale(1);
@@ -33,6 +38,7 @@
     font-weight: 700;
   }
 }
+/* Green check */
 @keyframes appear {
   0% {
     transform: translateY(50%);
@@ -399,7 +405,7 @@ h1 {
   transition: 0.3s ease-in-out;
 }
 
-/* Bouton page d'accueil */
+/* Bouton "Explorer nos restaurants" page d'accueil */
 .btn {
   width: 60%;
   height: 3.2rem;
@@ -418,7 +424,7 @@ h1 {
   }
 }
 
-/* Bouton page restaurants */
+/* Bouton "Commander" page restaurants */
 .btn__order {
   width: 75%;
   margin: 0 auto;

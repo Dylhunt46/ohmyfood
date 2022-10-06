@@ -1,4 +1,5 @@
 /* Loader */
+/* Rotation */
 @keyframes spin {
     from {
         transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
@@ -9,6 +10,7 @@
     }
 }
 
+/* End animation */
 @keyframes disappear {
     0% {
         transform: scale(1);
@@ -22,7 +24,6 @@
 }
 
 /* Hearts */
-
 @keyframes anim-heart {
     0% {
         font-weight: 400;
@@ -33,6 +34,7 @@
     }
 }
 
+/* Green check */
 @keyframes appear {
     0% {
         transform: translateY(50%);

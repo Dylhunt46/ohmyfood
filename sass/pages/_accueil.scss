@@ -81,7 +81,6 @@
     left: 0.88rem;
     transition: all 0.3s ease-in-out;
 
-
     span {
       font-weight: bold;
     }
@@ -149,8 +148,6 @@
   }
 }
 
-
-
 /* Restaurants */
 
 .restaurants {
@@ -191,7 +188,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 1rem;
-      background-color: white;
+      background-color: $color-background2;
       border-radius: 0 0 1.5rem 1.5rem;
 
       h3,
@@ -238,7 +235,6 @@
   .img__4 img {
     object-position: 50% 90%;
   }
-
 
   /* Hearts */
 
