@@ -674,7 +674,7 @@ h1 {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
-  animation: anim-heart 2.5s ease-in-out;
+  animation: anim-heart 5s ease-in-out;
   transition: all 2s ease-in-out;
 }
 .restaurants input[type=checkbox],
