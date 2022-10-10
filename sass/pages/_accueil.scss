@@ -153,6 +153,7 @@
 .restaurants {
   background-color: $color-background1;
   height: 100%;
+  padding-bottom: 2rem;
 
   @media (min-width: 1000px) {
     .restaurants__list {

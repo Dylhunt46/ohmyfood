@@ -587,6 +587,7 @@ h1 {
 .restaurants {
   background-color: #f6f6f6;
   height: 100%;
+  padding-bottom: 2rem;
   /* Hearts */
 }
 @media (min-width: 1000px) {
